@@ -11,6 +11,7 @@ export function CartProvider({ children }) {
         (item) => item.id === dish.id
       );
 
+      
       if (existingDish) {
         return previousCart.map((item) =>
           item.id === dish.id
